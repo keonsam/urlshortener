@@ -1,1 +1,1 @@
-technologies use were: html, express, mongodb, node.
+technologies use were: html, SCSS, React, bootstrap v4.00, express, mongodb, node.

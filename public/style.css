@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+.jumbotron {
+  margin-bottom: 0px;
+}
+h1 {
+  color: blue;
+  margin-bottom: 20px;
+}
+button {
+  margin-left: 10px;
+}
+input {
+  width: 40%;
+}
+#footer {
+  background-color: grey;
+  .icons{
+    float: right;
+    font-size: 20px;
+  }
+  span{
+    color: white;
+  }
+}
