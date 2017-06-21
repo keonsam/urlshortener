@@ -30,9 +30,9 @@ class Body extends React.Component{
           <h3> Example output </h3>
           <p>Enter the shorten url in the url search box at the end of this website url with a slash.</p>
           <p>url/34y</p>
-          <form method="post" action="../server.js">
+          <form method="post" action="../form">
            <label htmlFor="Enter Url">Enter Url:</label><br/>
-           <input type="text" onChange={this.handleChange} value={this.state.input}/>
+           <input name="str" type="text" onChange={this.handleChange} value={this.state.input}/>
            <button className="btn btn-primary" type="Submit">Submit</button>
           </form>
         </main>

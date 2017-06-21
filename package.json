@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "base58": "^0.1.0",
+    "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "node-sass-middleware": "^0.11.0"
   }
