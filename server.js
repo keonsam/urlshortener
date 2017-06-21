@@ -2,16 +2,16 @@
 const express = require('express')
 const app = express()
 const mongoose = require('mongoose');
-const sassMiddleware = require('node-sass-middleware');
 const Base58 = require('base58');
 const bodyParser = require('body-parser');
 const path  = require('path');
 const VIEWS = path.join(__dirname, 'public');
 const database = require('./database')
 let Json = {
-
+    
 }
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/urlShorters');
+
+mongoose.connect(private.env.MONGO_URI || 'mongodb://localhost/urlShorters');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(VIEWS));
 app.get('/', function(req, res){
@@ -45,7 +45,7 @@ app.get('/:data',(req,res)=>{
     const original = data.originalUrl;
     if(regex1.test(original)){
       return res.redirect(original);
-    }elseif(regex2.test(original)){
+    }else if(regex2.test(original)){
       return res.redirect("http://"+ original);
     }else{
       return res.redirect("http://www."+original);
