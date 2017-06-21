@@ -20,13 +20,13 @@ button {
 input {
   width: 40%;
 }
-.footer {
+#footer {
   background-color: grey;
-  .icons{
+}
+#footer .icons{
     float: right;
     font-size: 20px;
   }
-  span{
+#footer span{
     color: white;
   }
-}
