@@ -13,6 +13,7 @@
     "base58": "^0.1.0",
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
+    "mongoose": "^4.10.7",
     "node-sass-middleware": "^0.11.0"
   }
 }
