@@ -20,7 +20,7 @@ button {
 input {
   width: 40%;
 }
-#footer {
+.footer {
   background-color: grey;
   .icons{
     float: right;
