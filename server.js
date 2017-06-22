@@ -18,7 +18,7 @@ app.get('/', function(req, res){
  res.sendFile(`${VIEWS}/index.html`);
 });
 app.post('/form', (req, res)=>{
-  const longUrl = res.body.str;
+  const longUrl = req.body.str;
   const regex = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
   if(regex.test(longUrl)){
   const shortUrl = Base58.encode(Math.floor(Math.random()*100000));
