@@ -8,16 +8,16 @@ const path  = require('path');
 const VIEWS = path.join(__dirname, 'public');
 const database = require('./database')
 let Json = {
-    
+
 }
 
-mongoose.connect(private.env.MONGO_URI || 'mongodb://localhost/urlShorters');
+mongoose.connect(process.env.MONGO_URI || 'mongodb://glitch:someone@ds123182.mlab.com:23182/urlshorter');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(VIEWS));
 app.get('/', function(req, res){
  res.sendFile(`${VIEWS}/index.html`);
 });
-app.post('/form', (res, req)=>{
+app.post('/form', (req, res)=>{
   const longUrl = res.body.str;
   const regex = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
   if(regex.test(longUrl)){
